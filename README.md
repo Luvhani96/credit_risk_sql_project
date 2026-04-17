@@ -1,64 +1,93 @@
-📊 Credit Risk Analysis using SQL
- Project Overview
-This project focuses on analyzing customer and loan data to assess credit risk using SQL.
-The goal is to identify patterns in loan defaults and understand which factors contribute to higher risk.
+# 📊 Credit Risk Analysis using SQL
 
-Database Structure
-The project uses two main tables:
-1. Customers Table
-•	customer_id – Unique identifier for each customer
-•	full_name – Customer name
-•	monthly_income – Customer income
+## 📌 Project Overview
 
-2. Loans Table
-•	loan_id – Unique loan identifier
-•	customer_id – Links to customers table
-•	loan_amount – Amount issued
-•	interest_rate – Interest charged
-•	loan_status – (Approved, Defaulted, Rejected)
+This project analyzes customer and loan data to assess credit risk using SQL.
+The objective is to identify patterns in loan defaults and understand the key factors that contribute to high-risk lending.
 
-Key Analysis Performed
-•	Total number of loans issued
-•	Average loan amount
-•	Loan status distribution
-•	Default rate calculation
-•	High-risk loan identification
-•	Risk analysis by interest rate
-•	Customer-level default rate
-•	Income-based risk segmentation
+---
 
-Key Insights
-•	Higher loan amounts tend to be associated with higher default rates
-•	Customers with lower monthly income show higher likelihood of default
-•	Certain customers repeatedly default, indicating high-risk profiles
-•	Interest rates appear to reflect underlying risk levels
+## 🧱 Database Structure
 
-Tools & Technologies
-•	MySQL Workbench
+### Customers Table
 
- How to Run the Project
-1.	Clone or download this repository
-2.	Open MySQL Workbench
-3.	Run schema.sql to create the database and tables
-4.	Run analysis.sql to perform the analysis
+* `customer_id` – Unique identifier
+* `full_name` – Customer name
+* `age` – Customer age
+* `employment_status` – Employment type (Employed, Self-employed, Unemployed)
+* `monthly_income` – Monthly income
 
-Project Structure
-credit-risk-SQL-project/
+### Loans Table
 
-schema. SQL # Database creation & data insertion
+* `loan_id` – Unique loan identifier
+* `customer_id` – Foreign key linking to customers
+* `loan_amount` – Loan amount issued
+* `interest_rate` – Interest rate applied
+* `loan_status` – Loan outcome (Approved, Defaulted, Rejected)
 
-analysis. SQL # SQL queries for analysis
+---
 
-insights.md # Key findings and interpretations
+## 📊 Key Analysis Performed
 
-README.md # Project documentation
+* Total number of loans issued
+* Average loan amount
+* Loan status distribution
+* Default rate calculation
+* High-risk loan identification
+* Risk analysis by interest rate
+* Customer-level default rate
+* Income-based risk segmentation
+* Employment-based risk analysis
+
+---
+
+## 🧠 Key Insights
+
+* Higher loan amounts tend to be associated with increased default risk
+* Customers with lower monthly income are more likely to default
+* Unemployed customers show higher credit risk
+* Certain customers repeatedly default, indicating high-risk behavior
+* Interest rates reflect underlying borrower risk
+
+---
+
+## 🛠️ Tools & Technologies
+
+* SQL (MySQL)
+* MySQL Workbench
+
+---
+
+## 🚀 How to Run the Project
+
+1. Run `schema.sql` to create the database and tables
+2. Run `analysis.sql` to execute the analysis queries
+
+---
+
+## 📁 Project Structure
+
+credit-risk-sql-project/
+│
+├── schema.sql
+├── analysis.sql
+├── README.md
+
+---
+
+## 📈 Future Improvements
+
+* Develop a credit scoring model
+* Build an interactive dashboard using Power BI
+* Include additional customer attributes (e.g., credit history, loan duration)
+
+---
+
+## 💡 Author
+
+This project was developed as part of a data analytics learning journey, focusing on SQL and real-world credit risk analysis.
+
+---
 
 
- Future Improvements
-•	Add credit scoring model
-•	Integrate Power BI dashboard for visualization
-•	Include additional customer attributes (e.g., employment status, credit history)
-
-Conclusion
-This project was created as part of a data analytics learning journey, focusing on building practical SQL skills and understanding real world credit risk analysis.
-
+ 
